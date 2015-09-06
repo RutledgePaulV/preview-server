@@ -4,6 +4,7 @@
   "description": "a dockerized webapp that can be run in order to provide an API to get thumbnail previews",
   "main": "app.js",
   "scripts": {
+    "start": "node --harmony app.js",
     "test": "mocha --harmony test"
   },
   "repository": {

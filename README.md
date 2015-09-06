@@ -7,7 +7,7 @@ of publicly available website links. It is intended to be run in order to suppor
 
 ### usage
 ```bash
-docker run -d -p 80:3000 rutledgepaulv/preview-server
+docker run -d -p 80:3000 quay.io/rutledgepaulv/preview-server
 ```
 
 
