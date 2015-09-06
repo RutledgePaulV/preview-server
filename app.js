@@ -42,13 +42,13 @@ var screenshot = function (url) {
     var imageName = hash(url) + ".png";
     return new Promise(function (resolve, reject) {
         if (cache.hasOwnProperty(imageName)) {
-            resolve(cache[imageName]);
+            resolve({uri: cache[imageName]});
         } else {
             urlToImage(url, imageRoot + "/" + imageName, {ignoreSslErrors: false}).fail(function (err) {
                 reject({error: 'An error occurred while fetching the url. Probably it is unreachable.'});
             }).then(function () {
-                cache[url] = '/' + imageName;
-                resolve({uri: cache[url]});
+                cache[imageName] = '/' + imageName;
+                resolve({uri: cache[imageName]});
             });
         }
     });
