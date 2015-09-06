@@ -15,7 +15,7 @@ docker run -d -p 80:3000 quay.io/rutledgepaulv/preview-server
 
 ### get a thumbnail link
 ```
-curl -X GET http://<your-server-that-preview-server-is-running-on>?url=www.google.com
+curl -X GET http://<your-server-that-preview-server-is-running-on>/?url=www.google.com
 
 # returns JSON
 {uri: "/1123412-234234-234234-234-23.png"}

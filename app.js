@@ -2,9 +2,12 @@ var koa = require('koa');
 var router = require('koa-router');
 var serve = require('koa-static');
 var urlToImage = require('url-to-image');
+var cors = require('koa-cors');
+
 var imageRoot = '/opt/images/';
 
 var app = koa();
+app.use(cors());
 app.use(serve(imageRoot));
 
 var hash = function (string) {
