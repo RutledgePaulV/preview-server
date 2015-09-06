@@ -24,7 +24,7 @@ var screenshot = function (url) {
         urlToImage(url, imageRoot + "/" + imageName, {ignoreSslErrors: false}).fail(function (err) {
             reject(err);
         }).then(function () {
-            resolve({uri: imageName});
+            resolve({uri: '/' + imageName});
         });
     });
 };
