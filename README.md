@@ -5,13 +5,13 @@ of publicly available website links. It is intended to be run in order to suppor
 [preview.js](https://github.com/rutledgepaulv/preview.js)
 
 
-## usage
+### usage
 ```bash
 docker run -d -p 80:3000 rutledgepaulv/preview-server
 ```
 
 
-## get a thumbnail link
+### get a thumbnail link
 ```
 curl -X GET http://<your-server-that-preview-server-is-running-on>?url=www.google.com
 
