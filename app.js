@@ -2,7 +2,7 @@ var koa = require('koa');
 var cors = require('koa-cors');
 var serve = require('koa-static');
 var router = require('koa-router');
-var urlToImage = require('url-to-image');
+var webshot = require('webshot');
 
 
 // since the result is cheap we can just cache in memory
@@ -44,9 +44,7 @@ var screenshot = function (url) {
         if (cache.hasOwnProperty(imageName)) {
             resolve({uri: cache[imageName]});
         } else {
-            urlToImage(url, imageRoot + "/" + imageName, {ignoreSslErrors: false}).fail(function (err) {
-                reject({error: 'An error occurred while fetching the url. Probably it is unreachable.'});
-            }).then(function () {
+            webshot(url, imageRoot + "/" + imageName, function () {
                 cache[imageName] = '/' + imageName;
                 resolve({uri: cache[imageName]});
             });

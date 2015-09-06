@@ -30,6 +30,6 @@
     "koa-cors": "0.0.16",
     "koa-router": "^5.1.2",
     "koa-static": "^1.4.9",
-    "url-to-image": "^0.2.0"
+    "webshot": "^0.16.0"
   }
 }
