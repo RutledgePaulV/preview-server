@@ -1,3 +1,5 @@
+[![Docker Repository on Quay.io](https://quay.io/repository/rutledgepaulv/preview-server/status "Docker Repository on Quay.io")](https://quay.io/repository/rutledgepaulv/preview-server)
+
 ## preview-server
 
 Preview Server is a dockerized webapp that can be run in order to provide an API to get thumbnail previews
