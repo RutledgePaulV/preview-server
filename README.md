@@ -18,6 +18,6 @@ docker run -d -p 80:3000 quay.io/rutledgepaulv/preview-server
 curl -X GET http://<your-server-that-preview-server-is-running-on>?url=www.google.com
 
 # returns JSON
-{uri: "1123412-234234-234234-234-23.png"}
+{uri: "/1123412-234234-234234-234-23.png"}
 ```
 
