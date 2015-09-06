@@ -1,0 +1,33 @@
+{
+  "name": "preview-server",
+  "version": "0.0.0",
+  "description": "a dockerized webapp that can be run in order to provide an API to get thumbnail previews",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --harmony test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RutledgePaulV/preview-server.git"
+  },
+  "keywords": [
+    "Preview",
+    "thumbnails",
+    "server",
+    "docker",
+    "phantomjs",
+    "screenshots"
+  ],
+  "author": "Paul Rutledge <paul.v.rutledge@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RutledgePaulV/preview-server/issues"
+  },
+  "homepage": "https://github.com/RutledgePaulV/preview-server#readme",
+  "dependencies": {
+    "koa": "^1.0.0",
+    "koa-router": "^5.1.2",
+    "koa-static": "^1.4.9",
+    "url-to-image": "^0.2.0"
+  }
+}
